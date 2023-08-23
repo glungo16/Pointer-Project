@@ -1,0 +1,97 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: lightcyan;
+	color: indigo;
+}
+
+html {
+	font-family: sans-serif;
+}
+
+canvas {
+	display: block;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
+.information {
+	width: 840px;
+	margin: 0 auto 10px;
+}
+
+#tracker {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	background-color: white;
+}
+
+h1 {
+	font-size: 200%;
+}
+
+p {
+	
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+}
+
+.left {
+    width: 60%;
+	position: relative;
+	right: 120px;
+    float: left;
+    text-align: right;
+}
+.right {
+    width: 35%;
+	position: relative;
+	right: 120px;
+    margin-left: 10px;
+    float:left;
+}
+
+/* hide video controls in fullscreen */
+video::-webkit-media-controls {
+  display:none !important;
+}
+
+/* Make tooltip text appear after you hover the mouse over*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  /*left: 50%;*/
+  /*top: 100%;*/
+  /*left: 125%; */
+  width: 120px;
+  height: 30px;
+  top: -20px;
+  left: 125%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+  
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
